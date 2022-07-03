@@ -25,8 +25,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Manages per-node metadata which is immutable. These are simple tags like roles or other configuration parameters.
- */
-@ExperimentalApi
+ */ 
 @NotThreadSafe
 final class MetadataManager {
     private final Map<Endpoint, Metadata> roleMap = new ConcurrentHashMap<>();

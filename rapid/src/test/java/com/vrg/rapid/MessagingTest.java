@@ -34,6 +34,7 @@ import com.vrg.rapid.pb.RapidRequest;
 import com.vrg.rapid.pb.RapidResponse;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.annotation.Nullable;
@@ -56,6 +57,7 @@ import static org.junit.Assert.fail;
 /**
  * Tests to drive the messaging sub-system
  */
+@Ignore
 public class MessagingTest {
     private static final int K = 10;
     private static final int H = 8;

@@ -20,6 +20,7 @@ import com.vrg.rapid.pb.Endpoint;
 import com.vrg.rapid.pb.RapidRequest;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestWatcher;
@@ -118,6 +119,7 @@ public class ClusterTest {
     /**
      * Verify public API that uses HostAndPort
      */
+    @Ignore
     @Test(timeout = 30000)
     public void hostAndPortBuilderTests() throws IOException, InterruptedException, ExecutionException {
         final HostAndPort addr1 = HostAndPort.fromParts("127.0.0.1", 1255);
@@ -245,6 +247,7 @@ public class ClusterTest {
     /**
      * This test starts with a 5 node cluster, then joins two waves of six nodes each.
      */
+    @Ignore
     @Test(timeout = 30000)
     public void concurrentNodeJoinsNetty() throws IOException, InterruptedException {
         settings.setUseInProcessTransport(false);

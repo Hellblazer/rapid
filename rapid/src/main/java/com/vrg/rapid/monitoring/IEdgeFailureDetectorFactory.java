@@ -27,8 +27,7 @@ import io.grpc.ExperimentalApi;
  * executed.
  *
  * To mark an edge faulty, simply execute notifier.run().
- */
-@ExperimentalApi
+ */ 
 public interface IEdgeFailureDetectorFactory {
     Runnable createInstance(final Endpoint subject, final Runnable notifier);
 }
